@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Click Counter</title>
+</head>
+<body>
+  <button id="clickButton">Click Me</button>
+  <p id="clickCount">0</p>
+
+  <script>
+    // Get references to the button and the paragraph element
+    const clickButton = document.getElementById("clickButton");
+    const clickCountElement = document.getElementById("clickCount");
+    let clickCount = 0;
+
+    // Add a click event 
+    clickButton.addEventListener("click", function() {
+      // Increment 
+      clickCount++;
+      clickCountElement.textContent = clickCount;
+    });
+  </script>
+</body>
+</html>

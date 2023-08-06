@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Switcher</title>
+</head>
+<body>
+  <img id="imageElement" src="image1.jpg" alt="Image 1">
+
+  <button id="buttonImage1">Image 1</button>
+  <button id="buttonImage2">Image 2</button>
+
+  <script>
+    // Get references to the image element and the buttons
+    const imageElement = document.getElementById("imageElement");
+    const buttonImage1 = document.getElementById("buttonImage1");
+    const buttonImage2 = document.getElementById("buttonImage2");
+
+    buttonImage1.addEventListener("click", function() {
+      imageElement.src = "image1.jpg";
+      imageElement.alt = "Image 1";
+    });
+
+    buttonImage2.addEventListener("click", function() {
+      imageElement.src = "image2.jpg";
+      imageElement.alt = "Image 2";
+    });
+  </script>
+</body>
+</html>

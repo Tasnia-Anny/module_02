@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Manipulation</title>
+</head>
+<body>
+  <button id="changeContentButton">Click Me</button>
+  <div id="contentDiv">Original Content</div>
+
+  <script>
+    // Get references to the button and the div element
+    const changeContentButton = document.getElementById("changeContentButton");
+    const contentDiv = document.getElementById("contentDiv");
+//add click event
+    changeContentButton.addEventListener("click", function() {
+     contentDiv.innerHTML = "Hello, this is a new message"; 
+    });
+  </script>
+</body>
+</html>
